@@ -39,9 +39,10 @@ ActiveRecord::Schema.define(version: 20171009212632) do
 
   create_table "users", force: :cascade do |t|
     t.string "name", null: false
+    t.string "email", null: false
     t.boolean "moderator", default: false, null: false
     t.boolean "creator", default: false, null: false
-    t.boolean "actuve", default: true, null: false
+    t.boolean "active", default: true, null: false
     t.index ["name"], name: "index_users_on_name", unique: true
   end
 

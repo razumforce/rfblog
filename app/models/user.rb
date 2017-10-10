@@ -6,4 +6,7 @@ class User < ApplicationRecord
 	validates :name, length: {maximum: 16, minimum: 2}
 	validates :name, uniqueness: true
 	validates :name, format: {with: /\w+/i, message: 'only letters allowed'}
+
+	validates :email, presence: true
+	validates :email, format: {with: /.+@.+\..+/i, message: 'incorrect email format'}
 end

@@ -9,7 +9,7 @@
 FFaker::Random.seed = 42
 # Create some users
 10.times do
-	User.find_or_create_by name: FFaker::Internet.user_name
+	User.find_or_create_by name: FFaker::Internet.user_name, email: FFaker::Internet.email
 end
 # Lets first 7 of them to be creators
 User.first(7).each { |u| u.update creator: true }
