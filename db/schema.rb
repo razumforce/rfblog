@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171009212632) do
+ActiveRecord::Schema.define(version: 20171010221207) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 20171009212632) do
     t.boolean "moderator", default: false, null: false
     t.boolean "creator", default: false, null: false
     t.boolean "active", default: true, null: false
+    t.string "test"
     t.index ["name"], name: "index_users_on_name", unique: true
   end
 
