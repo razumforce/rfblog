@@ -1,0 +1,25 @@
+p#notice = notice
+
+p
+  strong Title:
+  = @post.title
+p
+  strong Body:
+  = @post.body
+p
+  strong User:
+  = @post.user_id
+p
+  strong Active:
+  = @post.active
+p
+	strong Commentaries:
+	table
+		- @post.commentaries.order(:created_at).each do |commentary|
+			tr
+				td: b = commentary.user.name
+				td = commentary.body
+
+=> link_to 'Edit', edit_post_path(@post)
+'|
+=< link_to 'Back', posts_path
