@@ -1,28 +1,15 @@
 p#notice = notice
 
-h1 Listing posts
+h1 Статьи
 
-table
-  thead
-    tr
-      th Title
-      th Body
-      th User
-      th Active
-      th
-      th
-      th
-
-  tbody
-    - @posts.each do |post|
-      tr
-        td = post.title
-        td = post.body
-        td = post.user_id
-        td = post.active
-        td = link_to 'Show', post
-        td = link_to 'Edit', edit_post_path(post)
-        td = link_to 'Destroy', post, data: { confirm: 'Are you sure?' }, method: :delete
+- @posts.each do |post|
+  p = post.title
+  p = post.body
+  p = post.user_id
+  p = post.active
+  span = link_to 'Show', post
+  span = link_to 'Edit', edit_post_path(post)
+  span = link_to 'Destroy', post, data: { confirm: 'Are you sure?' }, method: :delete
 
 br
 
