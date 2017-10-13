@@ -23,6 +23,12 @@ body {
 	font-family: sans-serif;
 }
 
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+}
+
 .container {
 	width: 1000px;
 	margin: 0 auto;
@@ -84,5 +90,6 @@ body {
 
 .menu li a:hover {
 	color: #18DC9E;
+	background-color: #FD7341;
 }
 
