@@ -52,6 +52,12 @@ div {
   color: green;
 }
 
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
 #error_explanation {
   width: 450px;
   border: 2px solid red;
@@ -77,12 +83,6 @@ div {
 
 label {
   display: block;
-}
-
-.field_with_errors {
-  padding: 2px;
-  background-color: red;
-  display: table;
 }
 
 // my added css
@@ -124,3 +124,32 @@ h1 {
   font-weight: bold;
   text-align: right;
 }
+
+.field input[type="text"], textarea, input[type="number"] {
+  font-family: 'PT Serif', serif;
+  font-size: 1.5em;
+}
+
+.field label {
+  font-family: 'PT Serif', serif;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.field textarea {
+  width: 50em;
+  height: 20em;
+  resize: none;
+}
+
+.field input[type="text"] {
+  width: 30em;
+}
+
+.submit-button {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
