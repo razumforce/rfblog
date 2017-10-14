@@ -2,12 +2,12 @@ p#notice = notice
 
 h1 Статьи
 
-.p-newpost = link_to 'New Post', new_post_path
+.m-link-new = link_to 'New Post', new_post_path
 
 - @posts.each do |post|
-  p.p-title = post.title
-  p.p-user = "Author: #{User.find(post.user_id).name}"
-  p.p-body = post.body
+  p.post-title = post.title
+  p.post-author = "Author: #{post.user.name}"
+  p.post-body = post.body
   / p = post.active
   span.m-link = link_to 'Show', post
   span.m-link = link_to 'Edit', edit_post_path(post)

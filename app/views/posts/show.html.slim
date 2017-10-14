@@ -1,9 +1,9 @@
 p#notice = notice
 
-p.p-title = @post.title
+p.post-title = @post.title
 / here we use another way to access user.name (compared to index.slim)
-p.p-user = "Author: #{@post.user.name}"
-p.p-body = @post.body
+p.post-author = "Author: #{@post.user.name}"
+p.post-body = @post.body
 
 / p
 /   strong Active:
