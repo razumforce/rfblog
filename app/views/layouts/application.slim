@@ -1,27 +1,27 @@
 doctype html
 html
-	head
-		title MytestSlim
-		= csrf_meta_tags
-		= stylesheet_link_tag 'application', media: 'all'
-		= javascript_include_tag 'application'
+  head
+    title MytestSlim
+    = csrf_meta_tags
+    = stylesheet_link_tag 'application', media: 'all'
+    = javascript_include_tag 'application'
 
 
-	body
-		.wrapper
-			.header
-				.container
-					.menu-bar
-						ul.menu
-							li: a href="/home/show" Начало
-							li: a href="/about/show" Сила Разума
-							li: a href="/posts" Статьи
-			.main
-				.container
-					= yield
+  body
+    .wrapper
+      .header
+        .container
+          .menu-bar
+            ul.menu
+              li: a href="/home/show" Начало
+              li: a href="/about/show" Сила Разума
+              li: a href="/posts" Статьи
+      .main
+        .container
+          = yield
 
-			.footer
-				.container
-					.footer-text
-						span Copyright 2017 &copy razumforce<br>
-						span All rights reserved
+      .footer
+        .container
+          .footer-text
+            span Copyright 2017 &copy razumforce<br>
+            span All rights reserved
