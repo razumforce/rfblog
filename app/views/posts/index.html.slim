@@ -1,29 +1,17 @@
 p#notice = notice
 
-h1 Listing posts
+h1 Статьи
 
-table
-  thead
-    tr
-      th Title
-      th Body
-      th User
-      th Active
-      th
-      th
-      th
+.p-newpost = link_to 'New Post', new_post_path
 
-  tbody
-    - @posts.each do |post|
-      tr
-        td = post.title
-        td = post.body
-        td = post.user_id
-        td = post.active
-        td = link_to 'Show', post
-        td = link_to 'Edit', edit_post_path(post)
-        td = link_to 'Destroy', post, data: { confirm: 'Are you sure?' }, method: :delete
+- @posts.each do |post|
+  p.p-title = post.title
+  p.p-user = "Author: #{User.find(post.user_id).name}"
+  p.p-body = post.body
+  / p = post.active
+  span.m-link = link_to 'Show', post
+  span.m-link = link_to 'Edit', edit_post_path(post)
+  span.m-link = link_to 'Destroy', post, data: { confirm: 'Are you sure?' }, method: :delete
 
-br
+p
 
-= link_to 'New Post', new_post_path

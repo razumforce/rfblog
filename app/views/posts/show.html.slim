@@ -1,17 +1,14 @@
 p#notice = notice
 
-p
-  strong Title:
-  = @post.title
-p
-  strong Body:
-  = @post.body
-p
-  strong User:
-  = @post.user_id
-p
-  strong Active:
-  = @post.active
+p.p-title = @post.title
+/ here we use another way to access user.name (compared to index.slim)
+p.p-user = "Author: #{@post.user.name}"
+p.p-body = @post.body
+
+/ p
+/   strong Active:
+/   = @post.active
+
 p
 	strong Commentaries:
 	table
@@ -20,6 +17,5 @@ p
 				td: b = commentary.user.name
 				td = commentary.body
 
-=> link_to 'Edit', edit_post_path(@post)
-'|
-=< link_to 'Back', posts_path
+span.m-link => link_to 'Edit', edit_post_path(@post)
+span.m-link =< link_to 'Back', posts_path
