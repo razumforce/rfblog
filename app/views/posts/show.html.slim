@@ -17,5 +17,5 @@ p
 				td: b = commentary.user.name
 				td = commentary.body
 
-span.m-link => link_to 'Edit', edit_post_path(@post)
-span.m-link =< link_to 'Back', posts_path
+span.m-link = link_to 'Edit', edit_post_path(@post)
+span.m-link = link_to 'Back', posts_path

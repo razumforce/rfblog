@@ -10,7 +10,6 @@
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
-/bin/*
 !/log/.keep
 !/tmp/.keep
 
@@ -19,6 +18,5 @@
 
 .byebug_history
 
-.DS_Store
-/app/.DS_Store
-/app/assets/.DS_Store
+/bin/*
+*.DS_Store
