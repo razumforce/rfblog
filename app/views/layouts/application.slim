@@ -1,13 +1,10 @@
 doctype html
 html
 	head
-    title MytestSlim
-    = csrf_meta_tags
-    = stylesheet_link_tag 'application', media: 'all'
-    = javascript_include_tag 'application'
-
-  	
- 
+		title MytestSlim
+		= csrf_meta_tags
+		= stylesheet_link_tag 'application', media: 'all'
+		= javascript_include_tag 'application'
 
 	body
 		.wrapper
@@ -17,6 +14,7 @@ html
 						ul.menu
 							li: a href="/home/show" Начало
 							li: a href="/about/show" Сила Разума
+							li: a href="/posts" Статьи
 			.main
 				.container
 					= yield
