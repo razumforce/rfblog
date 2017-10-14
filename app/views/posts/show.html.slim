@@ -10,12 +10,12 @@ p.p-body = @post.body
 /   = @post.active
 
 p
-	strong Commentaries:
-	table
-		- @post.commentaries.order(:created_at).each do |commentary|
-			tr
-				td: b = commentary.user.name
-				td = commentary.body
+  strong Commentaries:
+  table
+    - @post.commentaries.order(:created_at).each do |commentary|
+      tr
+        td: b = commentary.user.name
+        td = commentary.body
 
 span.m-link = link_to 'Edit', edit_post_path(@post)
 span.m-link = link_to 'Back', posts_path
