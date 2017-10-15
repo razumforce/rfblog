@@ -12,21 +12,26 @@ html
       .header
         .container
           .menu-bar
-            ul.menu
+            .menu-main
+              ul
+                li: a href="/home/show" Начало
+                li: a href="/about/show" Сила Разума
+                li: a href="/posts" Статьи
+            .menu-login
+              ul
+                - if user_signed_in?
+                  li
+                    = link_to "Profile", edit_user_registration_path
+                  li
+                    = link_to 'Logout', destroy_user_session_path, method: :delete
+                - else
+                  li
+                    = link_to "Log In", new_user_session_path
+                  li
+                    = link_to "Register", new_user_registration_path
+            .menu-hello
               - if user_signed_in?
-                li
-                  span = "Hello, #{current_user.email}"
-                li
-                  = link_to 'logout', destroy_user_session_path, method: :delete
-              - else
-                li
-                  = link_to "Log In", new_user_session_path
-                li
-                  = link_to "Register", new_user_registration_path
-
-              li: a href="/home/show" Начало
-              li: a href="/about/show" Сила Разума
-              li: a href="/posts" Статьи
+                span = "Hello, #{current_user.email}"
       .main
         .container
           p.notice = notice
