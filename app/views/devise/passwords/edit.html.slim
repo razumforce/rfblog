@@ -18,5 +18,6 @@ h2
     br
     = f.password_field :password_confirmation, autocomplete: "off"
   .actions
-    = f.submit "Change my password"
-= render "devise/shared/links"
+    = f.submit("Change my password", class: "submit-button")
+.m-link-devise
+  = render "devise/shared/links"
