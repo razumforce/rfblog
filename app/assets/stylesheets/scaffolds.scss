@@ -48,10 +48,6 @@ div {
   }
 }
 
-#notice {
-  color: green;
-}
-
 .field_with_errors {
   padding: 2px;
   background-color: red;
@@ -125,7 +121,8 @@ h1 {
   text-align: right;
 }
 
-.field input[type="text"], textarea, input[type="number"] {
+.field input[type="text"], textarea, input[type="number"],
+       input[type="email"], input[type="password"] {
   font-family: 'PT Serif', serif;
   font-size: 1.5em;
 }
@@ -150,6 +147,22 @@ h1 {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.5em;
   font-weight: 700;
+  line-height: 1.2;
+}
+
+.notice {
+  color: green;
+}
+
+.alert {
+  color: red;
+}
+
+.m-link-devise {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-left: 0;
   line-height: 1.2;
 }
 
