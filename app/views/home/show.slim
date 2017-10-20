@@ -4,6 +4,8 @@ p.post-body Пока что это тестовая версия, следите
 
 p.post-body Вы побывали на этой странице: #{session[:times_visited]} раз
 
+<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom Home"> Tooltip on bottom Home </button>
+
 - if user_signed_in?
   p.post-body Возвращайтесь - #{current_user.name}!
 - else

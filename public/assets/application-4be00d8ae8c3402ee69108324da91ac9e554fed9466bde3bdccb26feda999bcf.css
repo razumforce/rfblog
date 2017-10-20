@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&subset=cyrillic");
+/* line 3, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 12, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 18, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 24, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 27, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 31, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #fff;
+  background-color: #FD7341;
+}
+
+/* line 37, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 41, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 46, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 51, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 57, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 64, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 74, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 80, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+
+/* line 86, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+/* line 92, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+.post-title {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 2.3em;
+  font-weight: bold;
+  line-height: 1.125;
+}
+
+/* line 99, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+.post-body {
+  font-family: 'PT Serif', serif;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+/* line 105, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+.m-link {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+/* line 112, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+.post-author {
+  color: #FD7341;
+  font-size: 1.2em;
+}
+
+/* line 117, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+.m-link-new {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* line 124, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+.field input[type="text"], textarea, input[type="number"],
+input[type="email"], input[type="password"] {
+  font-family: 'PT Serif', serif;
+  font-size: 1.5em;
+}
+
+/* line 130, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+.field label {
+  font-family: 'PT Serif', serif;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+/* line 136, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+.field textarea {
+  width: 50em;
+  height: 20em;
+  resize: none;
+}
+
+/* line 142, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+.field input[type="text"] {
+  width: 30em;
+}
+
+/* line 146, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+.submit-button {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* line 153, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+.notice {
+  color: green;
+}
+
+/* line 157, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+.alert {
+  color: red;
+}
+
+/* line 161, /vagrant/rfblog/app/assets/stylesheets/scaffolds.scss */
+.m-link-devise {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-left: 0;
+  line-height: 1.2;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	font-family: sans-serif;
+}
+
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.header {
+	background-color: #FD7341;
+	color: #0B3E2E;
+	height: 70px;
+	width: 100%;
+	float: left;
+}
+
+.main {
+	background-color: #FFFFFF;
+	min-height: 700px;
+	width: 100%;
+	float: left;
+}
+
+.footer {
+	background-color: #0B3E2E;
+	color: #FD7341;
+	height: 50px;
+	width: 100%;
+	float: left;
+ }
+
+.footer-text {
+ 	font-weight: bold;
+ 	/*font-size: smaller;*/
+ 	text-align: center;
+ }
+
+.menu-bar {
+ 	display: inline-block;
+ 	vertical-align: top;
+ 	width: 100%;
+ }
+
+.menu-bar li {
+	font-style: normal;
+	font-weight: bold;
+	font-variant: small-caps;
+	font-size: 20px;
+	list-style-type: none;
+	display: inline;
+	margin-left: 10px;
+}
+
+.menu-bar li a {
+	color: #0B3E2E;
+	text-decoration: none;
+}
+
+.menu-bar li a:hover {
+	color: #18DC9E;
+	background-color: #FD7341;
+}
+
+.menu-main {
+ 	padding-left: 0;
+ 	display: inline-block;
+ 	float: left;
+ 	width: 26em;
+ }
+
+ .menu-main ul {
+	padding-left: 15px;
+}
+
+ .menu-login {
+	display: inline-block;
+	text-align: right;
+	float: right;
+	width: 30em;
+	max-width: 100%;
+}
+
+.menu-login ul {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.menu-login li {
+	font-variant: normal;
+	font-size: 14px;
+}
+
+.menu-clear {
+	clear: both;
+}
+
+.menu-hello {
+	width: 100%;
+	float: right;
+	text-align: right;
+	display: inline-block;
+	font-variant: normal;
+	font-size: 14px;
+	font-weight: bold;
+}
